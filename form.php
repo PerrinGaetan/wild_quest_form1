@@ -17,23 +17,24 @@
         <legend>Contact : </legend>
         <div>
             <label for="firstname">Prenom :</label>
-            <input type="text" name="firstname" id="firstname">
+            <input type="text" name="firstname" id="firstname" required>
         </div>
         <div>
             <label for="nom">Nom :</label>
-            <input type="text" name="nom" id="nom">
+            <input type="text" name="nom" id="nom" required>
         </div>
         <div>
             <label for="mail">e-mail : </label>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="mail" id="mail" required>
         </div>
         <div>
             <label for="tel">Téléphone :</label>
-            <input type="tel" name="tel" id="tel">
+            <input type="tel" name="tel" id="tel" required>
         </div>
         <div>
             <label for="categorie">Catégorie</label>
-            <select name="categorie" id="categorie">
+            <select name="categorie" id="categorie" >
+                <option value="" default></option>
                 <option value="renseignement">Renseignement</option>
                 <option value="plainte">Plainte</option>
                 <option value="encouragement">Encouragement</option>
@@ -41,7 +42,7 @@
                 <option value="remboursement">Remboursement</option>
             </select>
         </div>
-        <div class="textarea">
+        <div class="textarea" required>
             <label for="message">Message : </label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </div>
